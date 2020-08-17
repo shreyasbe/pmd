@@ -18,6 +18,24 @@
 #define MAX_API_SECURITY_LINE_LENGTH 150000
 #define RPC_BINDING_HAS_NO_AUTH      382312464
 
+// PDWORD
+#ifndef PMD_DWORD_DEFINED
+#define PMD_DWORD_DEFINED 1
+typedef uint32_t DWORD, *PDWORD;
+#endif /* PMD_DWORD_DEFINED */
+
+// PCSTR
+#ifndef PMD_PCSTR_DEFINED
+#define PMD_PCSTR_DEFINED 1
+typedef const char* PCSTR;
+#endif /* PMD_PCSTR_DEFINED */
+
+// PSTR
+#ifndef PMD_PSTR_DEFINED
+#define PMD_PSTR_DEFINED 1
+typedef char* PSTR;
+#endif /* PMD_PSTR_DEFINED */
+
 #define BAIL_ON_NT_STATUS(ntStatus) \
     do {                                                           \
         if ((ntStatus) != STATUS_SUCCESS)                          \

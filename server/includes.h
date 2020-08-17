@@ -35,8 +35,6 @@
 #include <gssapi/gssapi.h>
 #include <gssapi/gssapi_generic.h>
 
-#include <vmdirclient.h>
-#include <vmafdclient.h>
 #include <vmrest.h>
 #include <netmgmt/netmgr.h>
 #include <jansson.h>
